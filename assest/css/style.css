@@ -5,14 +5,14 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600;1,700;1,800;1,900&display=swap');
 .head{
-    background: url(/assist/images/banner-bg.png);
+    background: url(/assest/images/banner-bg.png);
     background-size: cover;
     height: 100%;
     position: relative;
 }
 
 .head-wrapper{
-    background-image: url(/assist/images/banner-layer.png);
+    background-image: url(/assest/images/banner-layer.png);
     background-size: cover;
     opacity: 0.8;
     width: 100%;
@@ -49,6 +49,11 @@
 .nav-item a:hover::before{
     width: 100%;
 }
+.navbar-toggler i{
+    font-size: 30px;
+    color: black;
+    outline: none;
+}
 .banner-text h1{
     display: inline-block;
     font-size: 2.8rem;
@@ -64,7 +69,7 @@
 .banner-text{
     padding-left: 19px;
 }
-.banner-text button{
+.banner-text .btn{
     cursor: pointer;
     display: inline-block;
     background-color: darkblue;
@@ -74,8 +79,8 @@
     opacity: 1.2;
     font-weight: bold;
 }
-.banner-text button:hover{
-    background-color: white;
+.banner-text .btn:hover{
+    background-color:transparent;
     border-color:darkblue;
     color:darkblue;
 }
