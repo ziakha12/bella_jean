@@ -75,7 +75,7 @@
     background-color: darkblue;
     border-color: blue;
     color: white;
-    padding: 12px 10px;
+    padding: 10px 17px;
     opacity: 1.2;
     font-weight: bold;
 }
@@ -118,4 +118,22 @@
     }
     .header-footer a:hover{
             color: yellow;
+    }
+    .grid-img{
+        position: relative;
+    }
+    .grid-img p{
+            position: absolute;
+            top: 88%;
+            left: 5%;
+            font-weight: bold;
+    }
+    .grid-img-2{
+        position: relative;
+    }
+    .grid-img-2 p{
+            position: absolute;
+            top: 88%;
+            left: 5%;
+            font-weight: bold;
     }
