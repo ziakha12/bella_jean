@@ -19,6 +19,9 @@
     width: 100%;
     overflow: hidden;   
 }
+.collapse{
+    justify-content: space-between;
+}
 .nav-item a{
     text-decoration: none;
     color: black;
@@ -55,9 +58,12 @@
     color: black;
     outline: none;
 }
+.nav-item a i{
+    margin: 0px 2px;
+}
 .banner-text h1{
     display: inline-block;
-    font-size: 2.8rem;
+    font-size: 3rem;
     font-weight: 800;
     color: black;
     opacity: 1.0;
@@ -92,11 +98,13 @@
 .banner-img{
     position: relative;
     top: 36px;
+    float: right;
 
 }
 .banner-img img{
     position: relative;
     top: 27px;
+    right: 0;
     height: 336px;
     width: 320px;}
 
@@ -116,7 +124,7 @@
         padding-top: 10px;
         position: relative;
         justify-content: end;
-        right: 14%;
+        right: 10%;
     }
     .header-footer a,.header-footer p{
         margin: 10px 0px
@@ -151,6 +159,8 @@
     }
     .products-detail h2{
         font-weight: bold;
+        font-family: 'Playfair Display', serif;
+        font-size: 3rem;
     }
     .card-body{
             justify-content: space-between;
@@ -176,6 +186,7 @@
     height: 259px;
     background-color: gainsboro;
     transition: 0.3s;
+    padding: 23px;
 }
 .card-discount{
         display: inline-block;
@@ -219,6 +230,6 @@
 }
 .card-option i:hover{
     font-size: 25px;
-    color: red;
+    color: brown;
     cursor: pointer;
 }
