@@ -35,12 +35,41 @@
                 .grid-img-2{
                     margin-bottom: 20px;
                 }
+                .discovery{
+                    background: url(/assest/images/discovery.png);
+                    background-size: cover;
+                    height:100%;
+                    margin-bottom: 10px;
+                    background-position: bottom;
+                }
+      .deals-color {
+       padding-right: 10px;
+        display: flex;   
+        justify-content: center;
+                }
+                .deals-wrapper{
+                    display: block;
+                }
+                .deals-color input{
+                    margin-left: 10px;
+                }
         }
         @media(max-width:786px){
             .card{
                 margin-bottom: 20px;
             }
             .banner-text{
+                text-align: center;
+            }
+            .deals-wrapper{
+                display:block;
+                align-items: center;
+            }
+            .discovery-text h2 {
+                font-size: 2.1rem;
+                font-family: 'playfair Display',serif;
+            }
+            .footer-links{
                 text-align: center;
             }
         }

@@ -154,10 +154,10 @@
             font-size: 20px;
             font-family: 'Playfair Display', serif;
     }
-    .products-detail p{
+    .products-detail p,.deals-detail p{
         font-size: 20px;
     }
-    .products-detail h2{
+    .products-detail h2,.deals-detail h2{
         font-weight: bold;
         font-family: 'Playfair Display', serif;
         font-size: 3rem;
@@ -180,11 +180,14 @@
     height: 342px;
     border-radius: 0;
     position: relative;
-    
+    transition: 0.5s;
+    box-shadow: 1px 1px 17px 0px rgba(0,0,0,0.04);
+-webkit-box-shadow: 1px 1px 17px 0px rgba(0,0,0,0.04);
+-moz-box-shadow: 1px 1px 17px 0px rgba(0,0,0,0.04);
 }
 .card img{
     height: 259px;
-    background-color: gainsboro;
+    background-color: whitesmoke;
     transition: 0.3s;
     padding: 23px;
 }
@@ -200,7 +203,7 @@
     
 }
 .card-body{
-    background-color: gainsboro;
+    background-color: whitesmoke;
     transition: 0.3s;
 }
 .card-discount p{
@@ -218,9 +221,11 @@
     display: none;
     position: absolute;
     padding: 0px 8px;
-    background: gainsboro;
+    background: whitesmoke;
     transition: 0.3s;
     
+}.card:hover{
+    margin-top: -8px;
 }
 .card:hover .card-option{
     display: inline-block;
@@ -232,4 +237,123 @@
     font-size: 25px;
     color: brown;
     cursor: pointer;
+}
+.discovery{
+    background: url(/assest/images/discovery.png);
+    background-size: cover;
+    height:100vh;
+    margin-bottom: 10px;
+    background-position: bottom;
+}
+.discovery-text h2{
+    font-size: 3.8rem;
+    font-family: 'playfair Display',serif;
+}
+.discovery-text {
+    font-size:20px;
+}
+
+.discovery-btn{
+    text-decoration: none;
+    background: black;
+    color: white;
+    padding: 13px 21px;
+    font-size: 19px;
+    transition: 0.5s;
+}
+.discovery-btn:hover{
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+}
+.deals-color input{
+    width: 34px;
+    border-radius: 6px;
+    border: 0;
+    height: 30px;
+    display: block;
+    margin-bottom: 10px;
+}
+.deals-wrapper{
+    display: flex;
+    align-items: center;
+}
+.deals-color{
+    padding-right: 10px;
+}
+.deals-wrapper .card{
+    position: relative;
+}
+.deals-wrapper .card-body{
+    position: absolute;
+    bottom: 0%;
+    background: transparent;
+}
+.deals-wrapper .card img{
+    height: 367px;
+    padding: 0;
+}
+.deals-wrapper .card-body h5,.deals-wrapper .card-body p{
+    color: white;
+}
+.deals-wrapper .card-body .reviews i{
+    color: gold;
+}
+.testimonial-card p{
+    font-size: 17px;
+}
+.testimonial-card p span{
+    color: gray;
+}
+.deals-footer a{
+    color: gray;
+    font-size: 17px;
+    text-decoration: none;
+}
+.deals-footer a:hover,.deals-footer p{
+    font-size: 17px;
+    color: black;
+}
+.footer{
+    background-color:	#212129;
+}
+.footer h4{
+    color: white;
+    margin-bottom: 20px;
+}
+.footer ul{
+    list-style: none;
+    padding: 0;
+}
+.footer ul li a{
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+    font-size: 17px;
+    
+}
+.footer ul li a:hover{
+    color: green;
+    margin-left: 5px;
+}
+.footer-info{
+    color: gray;
+}
+.footer-info i{
+    font-size: 21px;
+    padding: 11px;
+}
+.footer-info p{
+    font-size: 17px;
+    padding-top: 15px;
+}
+.footer-links{
+    border-bottom: 1px solid white;
+}
+.footer-info i:hover{
+    color: greenyellow;
+    cursor: pointer;
+}
+.footer-links{
+    text-align: start;
 }
